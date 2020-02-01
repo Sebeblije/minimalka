@@ -38,6 +38,11 @@
         color: $blue
         text-decoration: underline
 
+// MEDIA QUERIES
+@media screen and (max-width: 850px)
+  .homeWrapper
+    padding: 40px 50px
+
 @media screen and (max-width: 800px)
   .homeWrapper
     position: relative
@@ -53,6 +58,25 @@
       display: none
     .homeHeader, footer, .homeNavigation
       grid-column-start: 4
+
+    &::before
+      grid-column-end: 6
+
+@media screen and (max-width: 451px)
+  .homeWrapper
+    position: relative
+    width: 100vw
+    height: 100vh
+    padding: 30px 16px
+    box-sizing: border-box
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+    grid-template-rows: 1fr 1fr 1fr 1fr
+
+    .homeTagline
+      display: none
+    .homeHeader, footer, .homeNavigation
+      grid-column-start: 1
 
     &::before
       grid-column-end: 6
