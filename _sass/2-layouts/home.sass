@@ -9,7 +9,7 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr
   grid-template-rows: 1fr 1fr 1fr 1fr
 
-.homeHeader, .homeTagline
+.homeHeader, .homeTagline, .latestPosts
   white-space: nowrap
 .homeHeader
   grid-row-start: 2
@@ -18,6 +18,12 @@
   grid-row-start: 3
   align-self: start
   font-size: 1.125rem
+
+.latestPosts
+  grid-row-start: 4
+  align-self: start
+  h1
+    font-size: 1.125rem
 
 .homeNavigation, footer
   grid-column-start: 10
@@ -39,7 +45,7 @@
         text-decoration: underline
 
 // MEDIA QUERIES
-@media screen and (max-width: 850px)
+@media screen and (max-width: 875px)
   .homeWrapper
     padding: 40px 50px
 

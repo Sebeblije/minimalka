@@ -6,7 +6,10 @@ layout: default
     <h1 class="homeHeader"><b>{{ site.title }}</b></h1>
     <h1 class="homeTagline">{{ site.tagline }}</h1>
 
-  {% include home-navigation.html %}
+    <div class="latestPosts">
+      <h1>Posljednje s bloga:</h1>
+    </div> <!-- end latestPosts -->
 
+  {% include home-nav.html %}
   {% include footer.html %}
 </div> <!-- end .homeWrapper -->
