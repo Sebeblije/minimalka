@@ -5,27 +5,37 @@ fields:
 - type: text
   name: title
   label: title
+  config:
+    required: true
+  description: Naslov priče
 - type: text
   name: layout
   label: layout
+  hidden: true
 - type: datetime
   name: date
   label: date
+  description: Datum objave priče
 - type: text
   name: categories
   label: categories
+  description: Ktegorije priče
 - type: text
   name: izvor
   label: izvor
+  description: Izvor odakle priča potiče
 - type: text
   name: pricaDate
   label: pricaDate
+  description: Datum prikazan na info priče
 - type: text
   name: pricaColor
   label: pricaColor
 - type: boolean
   name: lightText
   label: lightText
+  description: Uključiti / isklučiti za tamnu pozadinu i bijeli text
 - type: file
   name: primaryImage
   label: primaryImage
+  description: Slika priče
