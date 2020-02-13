@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<style type="text/css">
+{% for prica in site.price %}
+{% if prica.lightText == true %}
+a.{{ prica.title | slugify }}:visited {
+  background-color: {{ prica.pricaColor }};
+  color: white;
+}
+a.{{ prica.title | slugify }}:hover {
+  background-color: {{ prica.pricaColor }};
+  color: white;
+}
+a.{{ prica.title | slugify }}:hover h3, a.{{ prica.title | slugify }}:hover small {
+  opacity: 1;
+}
+a.{{ prica.title | slugify }}:active {
+  background-color: {{ prica.pricaColor }};
+  color: white;
+}
+{% else %}
+a.{{ prica.title | slugify }}:visited {
+  background-color: {{ prica.pricaColor }};
+}
+a.{{ prica.title | slugify }}:hover {
+  background-color: {{ prica.pricaColor }};
+}
+a.{{ prica.title | slugify }}:hover h3, a.{{ prica.title | slugify }}:hover small {
+  opacity: 1;
+}
+a.{{ prica.title | slugify }}:active {
+  background-color: {{ prica.pricaColor }};
+}
+{% endif %}
+{% endfor %}
+</style>
+<div class="priceWrapper">
+  {% for prica in site.price reversed %}
+    <a href="{{ site.baseurl }}{{ prica.url }}" class="prica {{ prica.title | slugify }}{% if prica.lightText == true %} lightText{% endif %}">
+      <h3>{{ prica.title }}</h3>
+      <small>{{ prica.categories }}</small>
+      <small>{{ prica.izvor }}</small>
+      <small>{{ prica.pricaDate }}</small>
+    </a>
+  {% endfor %}
+</div>

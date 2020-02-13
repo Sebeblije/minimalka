@@ -1,12 +1,13 @@
 title: Sebeblije
-tagline: Uradimo što je do nas, a onda se oslonimo na Allaha!
+tagline: Budi sebebom!
 email: sebeblije@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Sebeblije je stranica koja promoviše izvorno učenje vjere islam prema Časnom Kur'anu i Sunnetu Poslanika Muhammeda s.a.v.s.
 baseurl: "/minimalka"
 url: "https://sebeblije.github.io/"
+facebook_path: https://www.facebook.com/sebeblije
+twitter_path: https://www.twitter.com/sebeblije
+youtube_path: https://www.youtube.com/channel/UCtiz33KO2l_8gqrc0QPIWUw
 
 # Build settings
 markdown: kramdown
@@ -16,3 +17,8 @@ plugins:
 
 sass:
   sass_dir: _sass
+
+# PRIČE I KAZIVANJA
+collections:
+  price:
+    output: true
