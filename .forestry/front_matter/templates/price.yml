@@ -1,0 +1,31 @@
+---
+label: Priče
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: title
+- type: text
+  name: layout
+  label: layout
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: categories
+  label: categories
+- type: text
+  name: izvor
+  label: izvor
+- type: text
+  name: pricaDate
+  label: pricaDate
+- type: text
+  name: pricaColor
+  label: pricaColor
+- type: boolean
+  name: lightText
+  label: lightText
+- type: file
+  name: primaryImage
+  label: primaryImage
