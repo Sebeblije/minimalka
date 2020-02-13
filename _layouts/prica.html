@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<!-- IZGLED ZA PRIÖE-->
+<div class="priceContentWrapper">
+  {% include paginator.html %}
+
+  <div class="pricaCpntentContainer">
+    <div class="mainPricaContent">
+      <h1>{{ page.title }}</h1>
+      <small>{{ page.pricaDate }}</small>
+      {{ content }}
+    </div>
+    <div class="pricaImages">
+      <img src="{{ site.baseurl }}/assets/img/{{ page.primaryImage }}" width="100%" height="auto">
+    </div>
+  </div>
+</div>

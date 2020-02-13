@@ -5,6 +5,9 @@
   {% seo %}
 </head>
 <body>
+  {% if page.url != '/' %}
+  {% include pages-nav.html %}
+  {% endif %}
   {{ content }}
   {% include js-link.html %}
 </body>
