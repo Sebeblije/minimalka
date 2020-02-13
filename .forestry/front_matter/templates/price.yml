@@ -28,9 +28,12 @@ fields:
   name: pricaDate
   label: pricaDate
   description: Datum prikazan na info priče
-- type: text
-  name: pricaColor
+- name: pricaColor
+  type: color
   label: pricaColor
+  config:
+    required: true
+    color_format: Hex
 - type: boolean
   name: lightText
   label: lightText
