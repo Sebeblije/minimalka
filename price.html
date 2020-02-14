@@ -41,7 +41,7 @@ a.{{ prica.title | slugify }}:active {
       <h3>{{ prica.title }}</h3>
       <small>{{ prica.categories }}</small>
       <small>{{ prica.izvor }}</small>
-      <small>{{ prica.pricaDate }}</small>
+      <small>{{ prica.date | date: "%B %e, %Y" }}</small>
     </a>
   {% endfor %}
 </div>
