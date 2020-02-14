@@ -1,6 +1,6 @@
 ---
 label: Priče
-hide_body: false
+hide_body: true
 fields:
 - type: text
   name: title
@@ -24,10 +24,10 @@ fields:
   name: izvor
   label: izvor
   description: Izvor odakle priča potiče
-- type: text
-  name: pricaDate
-  label: pricaDate
-  description: Datum prikazan na info priče
+- type: file
+  name: primaryImage
+  label: primaryImage
+  description: Slika priče
 - name: pricaColor
   type: color
   label: pricaColor
@@ -38,7 +38,13 @@ fields:
   name: lightText
   label: lightText
   description: Uključiti / isklučiti za tamnu pozadinu i bijeli text
-- type: file
-  name: primaryImage
-  label: primaryImage
-  description: Slika priče
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: description
+  description: Opis price za SEO
