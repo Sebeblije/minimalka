@@ -8,6 +8,16 @@ fields:
   config:
     required: true
   description: Naslov priče
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: description
+  description: Opis price za SEO
 - type: text
   name: layout
   label: layout
@@ -38,13 +48,3 @@ fields:
   name: lightText
   label: lightText
   description: Uključiti / isklučiti za tamnu pozadinu i bijeli text
-- name: description
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: true
-    schema:
-      format: markdown
-  label: description
-  description: Opis price za SEO
