@@ -34,3 +34,7 @@
 <link rel="shortcut icon" href="{{ site.baseurl }}/favicon.ico">
 <!-- Custom CSS -->
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/styles.css">
+
+{% if jekyll.environment == 'production' %}
+{% include analytics.html %}
+{% endif %}

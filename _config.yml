@@ -7,6 +7,8 @@ facebook_path: https://www.facebook.com/sebeblije
 twitter_path: https://www.twitter.com/sebeblije
 youtube_path: https://www.youtube.com/channel/UCtiz33KO2l_8gqrc0QPIWUw
 
+google_analytics: UA-159309491-1
+
 # Build settings
 markdown: kramdown
 permalink: pretty
